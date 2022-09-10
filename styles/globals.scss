@@ -3,4 +3,58 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Custom Components */
+@import "styles/reset";
+
+
+.fadeup-enter {
+  opacity: .01;
+  transform: translateY(20px);
+  transition: opacity .2s ease-out, transform .2s ease-out;
+}
+
+.fadeup-enter-done {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+li {
+  color: white;
+}
+
+.Profile_profileHeight__1Q9Zk {
+  min-height: calc(100vh - 40px - 32px);
+}
+
+.Profile_pointBg__1Z7Zk {
+  left: -16px;
+  top: -16px;
+  position: absolute;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(90deg, #fde68a 0%, #c5b064 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-textPrimary {
+  --tw-text-opacity: 1;
+  color: #ffffff;
+}
+
+.text-textSecondary {
+  --tw-text-opacity: 1;
+  color: #d3c67b;
+}
+
+.header-h1-fluid {
+  font-size: clamp(3rem, 5vw + 1rem, 6.2rem);
+  line-height: 1.1;
+}
+
+.header-h2-fluid {
+  font-size: clamp(1.5rem, 1.3vw + 1rem, 2.6rem);
+  line-height: 1.1;
+}
