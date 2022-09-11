@@ -30,12 +30,12 @@ const TheHeader: NextPage = () => {
                                 <span>Contact</span>
                             </a>
                         </li>
-                        <li style={{transform: "translate(0px, 0px) rotate(0deg) scale(1)"}}>
+                        {/*<li style={{transform: "translate(0px, 0px) rotate(0deg) scale(1)"}}>
                             <a className="text-2xl md:text-base">
                                 <span className="font-mono text-amber-200">3.</span>
                                 <span>Blog</span>
                             </a>
-                        </li>
+                        </li>*/}
                     </ul>
                 </nav>
             </div>
