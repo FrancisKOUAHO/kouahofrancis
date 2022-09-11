@@ -9,7 +9,7 @@ const Contact: NextPage = () => {
                 style={{transitionDelay: "50ms"}}>Contact</h2>
             <div className="flex flex-col items-center text-white gap-4">
                 <p>
-                    N'hésitez pas à me contacter par courriel ou via mes réseaux sociaux.
+                    N&apos;hésitez pas à me contacter par courriel ou via mes réseaux sociaux.
                 </p>
                 <div className="flex gap-2 flex-wrap">
                     <SocialNetwork/>
