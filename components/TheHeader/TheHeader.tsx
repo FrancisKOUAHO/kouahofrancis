@@ -1,7 +1,12 @@
 import {NextPage} from "next";
+import {useRouter} from "next/router";
 
 
 const TheHeader: NextPage = () => {
+    const router = useRouter();
+
+    const locale = router?.locale;
+
     return (
         <header>
             <div className="items-center hidden md:flex py-4">
@@ -36,6 +41,17 @@ const TheHeader: NextPage = () => {
                                 <span>Blog</span>
                             </a>
                         </li>*/}
+                        {
+                            locale ? locale !== "fr" ? (
+                                <a href="/fr" className="text-2xl md:text-base">
+                                    <img src="/langs/fr.svg" style={{position: 'relative', top: '0.6rem'}}/>
+                                </a>
+                            ) : (
+                                <a href="/en" className="text-2xl md:text-base">
+                                    <img src="/langs/us.svg" style={{position: 'relative', top: '0.6rem'}}/>
+                                </a>
+                            ) : null
+                        }
                     </ul>
                 </nav>
             </div>

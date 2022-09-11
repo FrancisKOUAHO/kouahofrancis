@@ -128,7 +128,6 @@ const Projects: NextPage = () => {
         }
     ];
 
-
     return (
         <div className="w-full" id="Projects">
             <h2 className="mb-8 sm:mb-10 text-4xl text-center text-white fadeup-enter fadeup-enter-done"
@@ -138,7 +137,6 @@ const Projects: NextPage = () => {
                 <div className="flex flex-wrap gap-8">
                     {
                         projects.map((project, index) => {
-                            console.log(project.skills);
                             return (
                                 <div className="flex-1 fadeup-enter fadeup-enter-done" style={{transitionDelay: "0ms"}}
                                      key={index}>

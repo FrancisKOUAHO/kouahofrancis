@@ -1,5 +1,4 @@
 import type {NextPage} from 'next'
-import Head from 'next/head'
 import TheHeader from "../components/TheHeader/TheHeader";
 import Presentation from "../components/Presentation/Presentation";
 import Profile from "../components/Profile/Profile";
@@ -11,10 +10,6 @@ import Footer from "../components/Footer/Footer";
 const Home: NextPage = () => {
     return (
         <>
-            <Head>
-                <title>Francis Kouaho.FrontEnd Software Engineer</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-            </Head>
             <div className="min-h-full max-w-6xl mx-auto p-6 relative">
                 <div className="min-h-full relative">
                     <TheHeader/>
