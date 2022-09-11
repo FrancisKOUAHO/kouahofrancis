@@ -4,6 +4,9 @@ import TheHeader from "../components/TheHeader/TheHeader";
 import Presentation from "../components/Presentation/Presentation";
 import Profile from "../components/Profile/Profile";
 import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
+import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 
 const Home: NextPage = () => {
     return (
@@ -23,7 +26,10 @@ const Home: NextPage = () => {
                 </div>
                 <div className="flex flex-col gap-12 mt-16 sm:mt-0 sm:gap-24 items-center">
                     <Skills/>
+                    <Projects/>
+                    <Contact/>
                 </div>
+                <Footer/>
             </div>
         </>
     )

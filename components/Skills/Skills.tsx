@@ -100,7 +100,7 @@ const Skills: NextPage = () => {
     ];
 
     return (
-        <div className="hidden sm:block w-full">
+        <div className="hidden sm:block w-full" id="Skills">
             <div className="w-full">
                 <h2 className="mb-8 sm:mb-10 text-4xl text-center text-white fadeup-enter fadeup-enter-done" id="skills"
                     style={{transitionDelay: "50ms"}}>Skills</h2>

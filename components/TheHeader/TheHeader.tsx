@@ -13,19 +13,19 @@ const TheHeader: NextPage = () => {
                         style={{transitionDelay: "100ms"}}>
                         <li style={{transform: "translate(0px, 0px) rotate(0deg) scale(1)"}}
                             className="hidden sm:block">
-                            <a className="text-2xl md:text-base">
+                            <a href="#Skills" className="text-2xl md:text-base">
                                 <span className="font-mono text-amber-200">0.</span>
                                 <span>Skills</span>
                             </a>
                         </li>
                         <li style={{transform: "translate(0px, 0px) rotate(0deg) scale(1)"}}>
-                            <a className="text-2xl md:text-base">
+                            <a href="#Projects" className="text-2xl md:text-base">
                                 <span className="font-mono text-amber-200">1.</span>
                                 <span>Projects</span>
                             </a>
                         </li>
                         <li style={{transform: "translate(0px, 0px) rotate(0deg) scale(1)"}}>
-                            <a className="text-2xl md:text-base">
+                            <a href="#Contact" className="text-2xl md:text-base">
                                 <span className="font-mono text-amber-200">2.</span>
                                 <span>Contact</span>
                             </a>

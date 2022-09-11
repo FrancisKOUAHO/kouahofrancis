@@ -64,3 +64,13 @@ li {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .15s;
 }
+
+.bg-paper {
+  background-color: rgb(237,230,144/1);
+}
+
+.ProjectCard_wrapper__R5XKv {
+  box-shadow: 0 0 100px 1px #fde68a;
+  transition: transform .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+}
