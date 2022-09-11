@@ -20,7 +20,11 @@ footer, header, nav, section, main{
 
 body{
   line-height: 1;
-  background-color: #04082e;
+  background: #04082e url("/bg.svg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 ol, ul{
