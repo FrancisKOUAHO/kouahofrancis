@@ -6,6 +6,7 @@ const Skills: NextPage = () => {
         {
             name: "Figma",
             icon: "figma-rainbow.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "material-ui",
@@ -17,6 +18,7 @@ const Skills: NextPage = () => {
         {
             name: "Typescript",
             icon: "typescript-rainbow.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "Javascript",
@@ -24,7 +26,7 @@ const Skills: NextPage = () => {
         },
         {
             name: "ReactJS",
-            icon: "react-rainbow.svg",
+            icon: "react.svg",
         },
         {
             name: "NextJS",
@@ -33,6 +35,7 @@ const Skills: NextPage = () => {
         {
             name: "VueJS",
             icon: "vuejs.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "NuxtJS",
@@ -45,7 +48,8 @@ const Skills: NextPage = () => {
     const backEndSkills = [
         {
             name: "NodeJS",
-            icon: "nodejs.svg"
+            icon: "nodejs.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "ExpressJS",
@@ -56,7 +60,8 @@ const Skills: NextPage = () => {
     const databaseSkills = [
         {
             name: "MongoDB",
-            icon: "mongodb.svg"
+            icon: "mongodb.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "MySQL",
@@ -71,7 +76,8 @@ const Skills: NextPage = () => {
     const otherSkills = [
         {
             name: "Git & Github",
-            icon: "git.svg"
+            icon: "git.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "Jest",
@@ -79,11 +85,13 @@ const Skills: NextPage = () => {
         },
         {
             name: "Vitest",
-            icon: "vitest.svg"
+            icon: "vitest.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "Firebase",
-            icon: "firebase.svg"
+            icon: "firebase.svg",
+            checked: "text-gradient-primary"
         },
         {
             name: "Docker",
@@ -109,7 +117,7 @@ const Skills: NextPage = () => {
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
                                                 <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
-                                            <span className="text-gradient-primary font-bold">{skill.name}</span>
+                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
                                     </ul>
@@ -130,7 +138,7 @@ const Skills: NextPage = () => {
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
                                                 <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
-                                            <span className="text-gradient-primary font-bold">{skill.name}</span>
+                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
                                     </ul>
@@ -152,7 +160,7 @@ const Skills: NextPage = () => {
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
                                                 <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
-                                            <span className="text-gradient-primary font-bold">{skill.name}</span>
+                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
                                     </ul>
@@ -174,7 +182,7 @@ const Skills: NextPage = () => {
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
                                                 <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
-                                            <span className="text-gradient-primary font-bold">{skill.name}</span>
+                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
                                     </ul>
@@ -195,7 +203,7 @@ const Skills: NextPage = () => {
                                             <li className="flex items-center gap-2 text-lg">
                                             <span className="SkillsList_rainbowIcon__bSZdk">
                                                 <img src={`/icon/${skill.icon}`} alt="Figma"/></span>
-                                            <span className="text-gradient-primary font-bold">{skill.name}</span>
+                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
                                             </li>
                                         </span>
                                     </ul>
