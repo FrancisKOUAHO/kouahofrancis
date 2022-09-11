@@ -58,3 +58,9 @@ li {
   font-size: clamp(1.5rem, 1.3vw + 1rem, 2.6rem);
   line-height: 1.1;
 }
+
+.Button_buttonFluid__1Z7Zk {
+  transition-property: background, transform, box-shadow;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
