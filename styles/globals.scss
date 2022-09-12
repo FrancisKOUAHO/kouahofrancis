@@ -65,11 +65,11 @@ li {
 }
 
 .bg-paper {
-  background-color: rgb(237,230,144/1);
+  background-color: rgb(251 191 36 / 1);
 }
 
 .ProjectCard_wrapper__R5XKv {
-  box-shadow: 0 0 34px 1px #fde68a;
+  box-shadow: 0 0 34px .5px rgb(251 191 36 / .6);
   transition: transform .4s cubic-bezier(0.215, 0.61, 0.355, 1);
   cursor: pointer;
 }
