@@ -6,6 +6,13 @@
 
 /* Custom Components */
 @import "styles/reset";
+@import "styles/components/home";
+
+html {
+  scrollbar-color: #fbbf24 #d2a32c;
+  scrollbar-width: thin;
+}
+
 
 .fadeup-enter {
   opacity: .01;

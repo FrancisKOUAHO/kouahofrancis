@@ -1,6 +1,8 @@
 import type {NextPage} from 'next'
 
 const SocialNetwork: NextPage = () => {
+
+
     return (
         <div className="fadeup-enter fadeup-enter-done" style={{transitionDelay: "600ms"}}>
             <div className="flex gap-2 flex-wrap">
