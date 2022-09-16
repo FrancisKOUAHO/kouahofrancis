@@ -1,5 +1,6 @@
 import {NextPage} from "next";
 import {useRouter} from "next/router";
+import {Link} from "react-router-dom";
 
 
 const TheHeader: NextPage = () => {
@@ -10,9 +11,13 @@ const TheHeader: NextPage = () => {
     return (
         <header>
             <div className="items-center hidden md:flex py-4">
-                <img src="/Logo_Portfolio_Francis_Jaune.png" alt="Logo Portfolio Francis Jaune"
-                     className="mr-auto fadeup-enter fadeup-enter-done"
-                     style={{transitionDelay: "0ms", width: "2.5rem", height: "2.5rem"}}/>
+                <Link to={"/"}>
+                    <a>
+                        <img src="/Logo_Portfolio_Francis_Jaune.png" alt="Logo Portfolio Francis Jaune"
+                             className="mr-auto fadeup-enter fadeup-enter-done"
+                             style={{transitionDelay: "0ms", width: "2.5rem", height: "2.5rem"}}/>
+                    </a>
+                </Link>
                 <nav>
                     <ul className="flex items-baseline gap-6 fadeup-enter fadeup-enter-done"
                         style={{transitionDelay: "100ms"}}>
