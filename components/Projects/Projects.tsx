@@ -1,132 +1,8 @@
 import {NextPage} from "next";
+import projects from "../../config/data";
+import Reducer from "../../utils/reducer";
 
 const Projects: NextPage = () => {
-
-    const projects = [
-        {
-            title: "Collector",
-            link: "https://gitlab.com/Thibaudkhan/Collector",
-            view: "https://gitlab.com/Thibaudkhan/Collector",
-            icon: "🎇",
-            description: "",
-            skills: [
-                {
-                    name: "NuxtJs",
-                    icon: "??"
-                },
-                {
-                    name: "TailwindCss",
-                    icon: "??"
-                },
-            ]
-        },
-        {
-            title: "LetsGo App",
-            link: "https://github.com/FrancisKOUAHO/Letsgo",
-            view: "",
-            icon: "📲",
-            description: "",
-            skills: [
-                {
-                    name: "Dart",
-                    icon: "??"
-                },
-                {
-                    name: "Flutter",
-                    icon: "??"
-                },
-            ]
-        },
-        {
-            title: "LetsGo Web",
-            link: "https://letsg0.fr/",
-            view: "https://letsg0.fr/",
-            icon: "📲",
-            description: "",
-            skills: [
-                {
-                    name: "Wordpress",
-                    icon: "??"
-                },
-                {
-                    name: "Wordpress",
-                    icon: "??"
-                }
-            ]
-        },
-        {
-            title: "Messiant Calot",
-            link: "https://messiantcalot.fr/",
-            view: "https://messiantcalot.fr/",
-            icon: "🚧",
-            description: "",
-            skills: [
-                {
-                    name: "Wordpress",
-                    icon: "??"
-                },
-                {
-                    name: "Wordpress",
-                    icon: "??"
-                }
-            ]
-        },
-        {
-            title: "Sud Renovation",
-            link: "https://sudrenovationpiscine.fr/",
-            view: "https://sudrenovationpiscine.fr/",
-            icon: "🌊",
-            description: "",
-            skills: [
-                {
-                    name: "Wordpress",
-                    icon: "??"
-                },
-                {
-                    name: "Wordpress",
-                    icon: "??"
-                }
-            ]
-        },
-        {
-            title: "J-P Cheron",
-            link: "https://auxfinsgastronomes.com/",
-            view: "https://auxfinsgastronomes.com/",
-            icon: "🥗",
-            description: "",
-            skills: [
-                {
-                    name: "Wordpress",
-                    icon: "??"
-                },
-                {
-                    name: "Wordpress",
-                    icon: "??"
-                }
-            ]
-        },
-        {
-            title: "Francis KOUAHO",
-            link: "https://github.com/FrancisKOUAHO/kouahofrancis",
-            view: "",
-            icon: "🥗",
-            description: "",
-            skills: [
-                {
-                    name: "NextJs",
-                    icon: "??"
-                },
-                {
-                    name: "TailwindCss",
-                    icon: "??"
-                },
-                {
-                    name: "Sass",
-                    icon: "??"
-                }
-            ]
-        }
-    ];
 
     return (
         <div className="w-full" id="Projects">
@@ -168,13 +44,9 @@ const Projects: NextPage = () => {
                                             </a></div>
                                         </div>
                                         <h3 className="text-3xl">{project.title}</h3>
-                                        <p>Random app to choose student to
-                                            present his
-                                            project.
-                                            I made this app for my teacher who using an ugly website. You can use this
-                                            site
-                                            to random
-                                            everything, obviously.
+                                        <p>
+                                            {Reducer(project.description)}
+                                            <span className="span-data-tooltip" data-tooltip={project.description} data-position="bottom">Suite</span>
                                         </p>
                                         <div className="flex gap-2">
                                             {
