@@ -2,7 +2,7 @@
   position: fixed;
   transform: translate(-50%, -50%);
   width: 40%;
-  z-index: 9999;
+  z-index: 999999;
   pointer-events: none;
   transition: all .15s;
 
@@ -30,4 +30,39 @@
     }
   }
 }
+
+
+.span-data-tooltip {
+  margin-left: .2rem;
+  font-style: italic;
+  font-size: 13px;
+}
+
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+  text-decoration: underline;
+
+  [data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 150px;
+    display: block;
+    background: #FFF;
+    padding: 10px;
+    top: -50px;
+    box-shadow: 0 2px 5px #0000008c;
+    border-radius: 3px;
+    text-align: center;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  }
+}
+
+
+
 
