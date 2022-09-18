@@ -31,10 +31,7 @@ const Profile: NextPage = () => {
                             maxWidth: "100%"
                         }}>
                             <img alt="" aria-hidden="true"
-                                 style={{
-                                     width: "400px",
-                                     height: "281px"
-                                 }}
+                                 className="photo-profile"
                                  src="/KOUAHOFrancis.png"/></span>
                 </span>
             </div>

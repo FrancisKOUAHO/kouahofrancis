@@ -8,6 +8,10 @@
 @import "styles/reset";
 @import "styles/components/home";
 
+
+/* Custom Responsive Mobile */
+@import "responsive/mobile";
+
 html {
   scrollbar-color: #fbbf24 #d2a32c;
   scrollbar-width: thin;
@@ -79,4 +83,27 @@ li {
   box-shadow: 0 0 34px .5px rgb(251 191 36 / .6);
   transition: transform .4s cubic-bezier(0.215, 0.61, 0.355, 1);
   cursor: pointer;
+
+  @media screen and (max-width: 400px) {
+    padding: 1rem;
+  }
+
 }
+
+.photo-profile {
+  width: 400px;
+  height: 281px;
+}
+
+/* mobile responsive */
+
+@media screen and (max-width: 400px) {
+  .presentation-mobile {
+    margin-top: 2rem;
+  }
+
+  .photo-profile {
+    height: 188px;
+  }
+}
+

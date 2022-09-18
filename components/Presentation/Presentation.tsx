@@ -3,7 +3,7 @@ import SocialNetwork from "../SocialNetwork/SocialNetwork";
 
 const Presentation: NextPage = () => {
     return (
-        <div className="flex flex-col gap-6 sm:gap-10 w-full">
+        <div className="flex flex-col gap-6 sm:gap-10 w-full presentation-mobile">
             <div className="w-fit flex flex-col gap-2 relative">
                 <img src="/Logo_Portfolio_Francis_Jaune.png" alt="" className="Profile_pointBg__1Z7Zk w-20 h-20"
                      style={{opacity: "0.2"}}/>
@@ -15,8 +15,10 @@ const Presentation: NextPage = () => {
                 </h1>
                 <p className="header-h2-fluid text-textSecondary sm:mt-4 fadeup-enter fadeup-enter-done"
                    style={{transitionDelay: "500ms"}}><b className="text-textPrimary">
-                    Développeur FrontEnd.</b> Autodidacte
-                    depuis l&rsquo;âge de 15 ans, Et actuellement apprenti développeur FrontEnd chez <a href="https://www.welcometothejungle.com/fr/companies/mybestpro">MyBestPro</a>.
+                    FrontEnd Software Engineer.</b> Autodidacte
+                    depuis l&rsquo;âge de 13 ans, Et actuellement deuxième année master en alternance entant que
+                    FrontEnd Software Engineer chez <a
+                        href="https://www.welcometothejungle.com/fr/companies/mybestpro">MyBestPro</a>.
                 </p>
             </div>
             <SocialNetwork/>

@@ -46,9 +46,10 @@ const Projects: NextPage = () => {
                                         <h3 className="text-3xl">{project.title}</h3>
                                         <p>
                                             {Reducer(project.description)}
-                                            <span className="span-data-tooltip" data-tooltip={project.description} data-position="bottom">Suite</span>
+                                            <span className="span-data-tooltip" data-tooltip={project.description}
+                                                  data-position="bottom">Suite</span>
                                         </p>
-                                        <div className="flex gap-2">
+                                        <div className={"flex gap-3" + (project.skills.length < 2 ? '' : 'flex-wrap')}>
                                             {
                                                 project.skills.map((skill, index) => {
                                                     return (
